@@ -1,0 +1,173 @@
+.project {
+  padding: 64px 0;
+  border-top: 1px solid var(--border);
+}
+
+.project__title,
+.project__index {
+  transition: color 0.2s ease;
+}
+
+.project:hover .project__title,
+.project:hover .project__index {
+  color: var(--project-accent, var(--accent));
+}
+
+.project:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.project__head {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.project__index {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 24px;
+}
+
+.project__title {
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project__flag {
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.project__flag::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--project-accent, var(--accent));
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.project__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.project__description {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  margin: 0 0 18px;
+  max-width: 46ch;
+}
+
+.project__tech {
+  font-size: 0.86rem;
+  color: var(--text);
+  margin: 0 0 24px;
+}
+
+.project__links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.project .link-arrow {
+  color: var(--project-accent, var(--accent));
+}
+
+.project__pending {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.project-media {
+  order: -1;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--bg-soft);
+}
+
+.project-media__el {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Vídeos de demonstração costumam ser gravações verticais de celular —
+   "contain" evita cortar o conteúdo, com barras neutras ao redor. */
+.project-media__el--video {
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #101114;
+}
+
+.project:hover .project-media__el {
+  transform: scale(1.025);
+}
+
+.project-media__placeholder {
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-media__placeholder span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* BGT Fit — projeto em destaque */
+.project--featured {
+  border-left: 3px solid var(--project-accent, var(--accent));
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+.project--featured .project__index {
+  color: var(--project-accent, var(--accent));
+}
+
+.project--featured .project__title {
+  font-size: 1.6rem;
+}
+
+.project--featured .project__description {
+  font-size: 1.02rem;
+  max-width: 50ch;
+}
+
+@media (min-width: 860px) {
+  .project__body {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  .project-media {
+    order: 0;
+  }
+
+}

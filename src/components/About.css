@@ -1,0 +1,13 @@
+.about {
+  padding: 56px 0;
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.about__text {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+  max-width: 62ch;
+  margin: 0;
+}

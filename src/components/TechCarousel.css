@@ -1,0 +1,63 @@
+.tech {
+  border-top: 1px solid var(--border);
+}
+
+.tech .section-title {
+  margin-bottom: 20px;
+}
+
+.tech-carousel {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.tech-carousel__track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  width: max-content;
+  animation: tech-scroll 26s linear infinite;
+}
+
+.tech-carousel:hover .tech-carousel__track {
+  animation-play-state: paused;
+}
+
+.tech-carousel__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.tech-carousel__item img,
+.tech-carousel__item svg {
+  flex-shrink: 0;
+}
+
+.tech-carousel__item em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+@keyframes tech-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* a lista está duplicada, então -50% volta exatamente ao início sem "pulo" */
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-carousel__track {
+    animation: none;
+  }
+}
