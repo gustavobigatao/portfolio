@@ -5,7 +5,13 @@ export default function Hero() {
   return (
     <section id="inicio" className="hero">
       <div className="container hero__inner">
-        <img src="/profile-photo.jpg" alt={siteConfig.name} className="hero__photo" />
+        <img
+          src="/profile-photo.jpg"
+          alt={siteConfig.name}
+          className="hero__photo"
+          draggable="false"
+          onDragStart={(e) => e.preventDefault()}
+        />
 
         <div>
           <h1 className="hero__name">{siteConfig.name}</h1>
