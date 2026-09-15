@@ -10,8 +10,9 @@ function TechIcon({ tech }) {
 }
 
 export default function TechCarousel() {
-  // Duplica a lista para o loop do carrossel ficar contínuo (sem "pulo" no fim).
-  const track = [...technologies, ...technologies];
+  // Repete a lista várias vezes para o loop ficar contínuo mesmo em telas largas
+  // (com só 2 cópias, sobrava um "buraco" em branco em monitores grandes).
+  const track = [...technologies, ...technologies, ...technologies, ...technologies];
 
   return (
     <section id="tecnologias" className="section section--tight tech">

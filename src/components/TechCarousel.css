@@ -51,8 +51,8 @@
     transform: translateX(0);
   }
   to {
-    /* a lista está duplicada, então -50% volta exatamente ao início sem "pulo" */
-    transform: translateX(-50%);
+    /* a lista se repete 4x, então -25% volta exatamente ao início sem "pulo" */
+    transform: translateX(-25%);
   }
 }
 
