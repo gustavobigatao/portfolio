@@ -1,5 +1,5 @@
 .project {
-  padding: 64px 0;
+  padding: 40px 0;
 }
 
 .project__title,
@@ -63,7 +63,7 @@
 .project__body {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 28px;
+  gap: 20px;
   align-items: start;
 }
 
@@ -161,11 +161,10 @@
 @media (min-width: 860px) {
   .project__body {
     grid-template-columns: 1fr 1fr;
-    gap: 48px;
+    gap: 32px;
   }
 
   .project-media {
     order: 0;
   }
-
 }

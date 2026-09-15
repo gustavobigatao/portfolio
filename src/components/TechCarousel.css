@@ -25,9 +25,11 @@
 
 .tech-carousel__item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
-  font-size: 0.92rem;
+  font-size: 1.08rem;
+  font-weight: 500;
   color: var(--text-muted);
   white-space: nowrap;
 }
@@ -35,6 +37,8 @@
 .tech-carousel__item img,
 .tech-carousel__item svg {
   flex-shrink: 0;
+  width: 36px;
+  height: 36px;
 }
 
 .tech-carousel__item em {

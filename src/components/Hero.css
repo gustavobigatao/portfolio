@@ -12,10 +12,13 @@
 .hero__photo {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 8px;
   object-fit: cover;
   border: 2px solid var(--border);
   flex-shrink: 0;
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 .hero__name {
