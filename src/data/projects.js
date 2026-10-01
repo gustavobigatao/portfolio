@@ -19,6 +19,22 @@ export const projects = [
     demo: "",
   },
   {
+    id: "capillaris",
+    name: "Capillaris",
+    featured: false,
+    accent: "#775a19",
+    description:
+      "Capillaris é um sistema de gestão para clínicas de tratamento capilar, com apps separados para profissionais (Flutter) e para pacientes e administração (portal em React), além de uma API em FastAPI multi-tenant com controle de permissões por papel. Fiz com um colega: cuidamos de prontuário, agenda, tratamentos, fotos e faturamento, com conformidade LGPD (consentimento, exportação e anonimização de dados). O site institucional tem uma experiência 3D controlada por scroll, feita do zero com three.js.",
+    collaborative: true,
+    technologies: ["FastAPI", "Flutter", "React", "PostgreSQL", "Three.js", "JWT", "Git"],
+    image: "/projects/capillaris-logo.svg",
+    // TODO: inserir vídeo de demonstração do Capillaris aqui
+    video: "",
+    github: "",
+    githubPrivate: true, // repositório privado (projeto em equipe)
+    demo: "",
+  },
+  {
     id: "aureon",
     name: "Aureon",
     featured: false,
