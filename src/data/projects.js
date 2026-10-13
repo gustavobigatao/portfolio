@@ -16,7 +16,7 @@ export const projects = [
     video: "",
     github: "",
     githubPrivate: true, // repositório privado, ainda em fase de testes
-    demo: "",
+    demo: "https://propaganda.bgtfit.com.br",
   },
   {
     id: "capillaris",
