@@ -23,7 +23,7 @@ export default function Header() {
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
       <div className="container site-header__inner">
         <a href="#inicio" className="site-header__brand">
-          Gustavo Henrique
+          Gustavo Henrique Bigatão
         </a>
 
         <nav className="site-header__nav" aria-label="Navegação principal">
