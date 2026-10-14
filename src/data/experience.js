@@ -7,4 +7,11 @@ export const experience = [
     // TODO: descreva em 2-4 linhas o que você faz no dia a dia (bem específico, não genérico)
     description: "Atuo nas áreas de Pesquisa e Desenvolvimento (P&D) e Telecom na Dicomp.",
   },
+  {
+    role: "Gerente de Estoque e Help Desk",
+    company: "Bigatão Auto Peças",
+    period: "2023 - setembro de 2025",
+    description:
+      "Cuidei da gestão de estoque da loja e do suporte técnico (help desk) do dia a dia, resolvendo problemas de TI e dando apoio à equipe.",
+  },
 ];
