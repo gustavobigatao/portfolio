@@ -12,6 +12,6 @@ export const experience = [
     company: "Bigatão Auto Peças",
     period: "2023 - setembro de 2025",
     description:
-      "Cuidei da gestão de estoque da loja e do suporte técnico (help desk) do dia a dia, resolvendo problemas de TI e dando apoio à equipe.",
+      "Responsável pela gestão de estoque e pelo suporte técnico (help desk) da loja, atendendo chamados de TI e dando apoio operacional à equipe.",
   },
 ];
