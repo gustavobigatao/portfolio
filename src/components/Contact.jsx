@@ -8,7 +8,9 @@ export default function Contact() {
       <div className="container contact__inner">
         <Reveal>
           <h2 className="section-title">Vamos conversar?</h2>
-          <p className="section-subtitle">Estou aberto a oportunidades na área de tecnologia.</p>
+          <p className="section-subtitle">
+            Se quiser trocar uma ideia sobre algum projeto ou sobre tecnologia, é só chamar.
+          </p>
 
           <div className="contact__links">
             <a href={siteConfig.linkedin} target="_blank" rel="noopener noreferrer" className="link">
