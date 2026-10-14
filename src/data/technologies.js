@@ -9,5 +9,6 @@ export const technologies = [
   { name: "Python", icon: "python" },
   { name: "MySQL", icon: "mysql" },
   { name: "Power BI", icon: "powerbi" },
+  { name: "Git", icon: "git" },
   { name: "C#", icon: "csharp", status: "learning" },
 ];

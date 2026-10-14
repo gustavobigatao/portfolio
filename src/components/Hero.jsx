@@ -15,7 +15,9 @@ export default function Hero() {
 
         <div>
           <h1 className="hero__name">{siteConfig.name}</h1>
-          <p className="hero__role">Desenvolvedor de Software</p>
+          <p className="hero__role">
+            {siteConfig.role} · {siteConfig.location}
+          </p>
           <p className="hero__description">
             Formado em Análise e Desenvolvimento de Sistemas e no último ano de Engenharia de
             Software. Gosto de aprender colocando a mão no código e construindo projetos que
